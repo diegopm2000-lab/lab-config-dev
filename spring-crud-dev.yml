@@ -1,15 +1,4 @@
-spring:
-  config:
-    import:
-      - "optional:configserver:${CONFIG_REMOTE_FILE}"
-      - "optional:configserver:application.yml"
-  cloud:
-    config:
-      enabled: true
-      server:
-        git:
-          uri: https://github.com/your-repo/config-repo
-      
+spring:    
   datasource:
     url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
